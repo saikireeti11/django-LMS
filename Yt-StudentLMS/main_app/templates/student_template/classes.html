@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <!-- Include CSS for styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Select Subject and Watch Video</h5>
+                        <!-- Subject Selection Dropdown -->
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Select Subject:</label>
+                            <select class="form-select" id="subject">
+                                <option value="math">Math</option>
+                                <option value="science">Science</option>
+                                <option value="history">History</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                        <!-- Video Player -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <!-- Add the source of your video here -->
+                            <video controls class="embed-responsive-item">
+                                <source src="path/to/your/video.mp4" type="video/mp4">
+                                <!-- Add additional video formats as needed -->
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS for functionality (optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
